@@ -1,4 +1,4 @@
-const CACHE = 'pe-manager-v1-20261028';
+const CACHE = 'pe-manager-v2-20261029';
 const ASSETS = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
